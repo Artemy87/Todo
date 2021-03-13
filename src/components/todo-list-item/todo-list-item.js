@@ -11,10 +11,10 @@ const TodoListItem = ({ label, important = false }) => {
     <span className="todo-list-item" style={style}>
       {label}
       <button type="button" className="btn btn-outline-success btn-sm">
-        <i className="bi bi-x-circle-fill" />
+        <i className="bi bi-x-square-fill" />
       </button>
       <button type="button" className="btn btn-outline-danger btn-sm">
-        <i className="bi bi-exclamation" />
+        <i className="bi bi-exclamation-square-fill" />
       </button>
     </span>
   );

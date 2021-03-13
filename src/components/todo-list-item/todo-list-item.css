@@ -1,8 +1,14 @@
 .todo-list-item {
 	display: grid;
-	grid-template-columns: 1fr 30px 30px;
+	grid-template-columns: 1fr minmax(20px, auto) auto auto;
 	column-gap: 5px;
-}
+};
 
-TODO:
+.btn-outline-success {
+	grid-column-start: 3;
+};
+
+.btn-outline-danger {
+	grid-column-start: 4;
+};
 

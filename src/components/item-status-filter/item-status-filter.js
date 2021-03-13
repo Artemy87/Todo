@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { Component } from "react";
 
-import './item-status-filter'
+import "./item-status-filter";
 
-const ItemStatusFilter = () => {
-
-	const more = 1;
-	const done = 3;
-	return (
-		<h5 className="item-status-filter"> {more} more to do, {done} done </h5>
-	)
+export default class ItemStatusFilter extends Component {
+  render() {
+    return (
+      <div>
+        <button type="button" className="btn btn-info">
+          All
+        </button>
+        <button type="button" className="btn btn-outline-secondary">
+          Active
+        </button>
+        <button type="button" className="btn btn-outline-secondary">
+          Done
+        </button>
+      </div>
+    );
+  }
 }
-
-export default ItemStatusFilter;

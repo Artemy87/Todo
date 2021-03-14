@@ -3,7 +3,7 @@
 	grid-row-start: 2;
 
 	display: grid;
-	grid-template-columns: 1fr 20px 1fr;
+	grid-template-columns: auto 1fr auto;
 }
 
 .app-header > h5 {

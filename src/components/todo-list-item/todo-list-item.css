@@ -1,14 +1,22 @@
 .todo-list-item {
 	display: grid;
-	grid-template-columns: 1fr minmax(20px, auto) auto auto;
+	grid-template-columns: auto minmax(10px, 1fr) auto auto;
 	column-gap: 5px;
 };
 
-.btn-outline-success {
-	grid-column-start: 3;
-};
+.todo-list-item-label {
+	cursor: pointer;
+	user-select: none;
+}
 
-.btn-outline-danger {
-	grid-column-start: 4;
-};
 
+.todo-list-item.done .todo-list-item-label{
+	text-decoration: line-through;
+
+}
+
+.todo-list-item.important .todo-list-item-label{
+	color: steelblue;
+	font-weight: bold;
+
+}

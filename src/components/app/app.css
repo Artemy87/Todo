@@ -1,7 +1,7 @@
 .app {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
-	grid-template-rows: 60px auto auto auto auto;
+	grid-template-rows: 60px auto auto auto 10px auto;
 	grid-column-start: 2;
 	row-gap: 5px;
 };

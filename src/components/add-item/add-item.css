@@ -1,12 +1,13 @@
 .add-item-grid {
 	grid-column-start: 2;
-	grid-row-start: 5;
+	grid-row-start: 6;
 	
 	display: grid;
-	grid-template-columns: 1fr 40%;
+	grid-template-columns: 70px 1fr 30%;
 	grid-column-start: 2;
+	column-gap: 5px;
 }
 
-/* .add-item {
-	background-color: green;
-} */
+.add-item-grid .placeholder {
+	grid-column-start: 2;
+}

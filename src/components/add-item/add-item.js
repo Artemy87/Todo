@@ -4,11 +4,15 @@ import "./add-item.css";
 
 export default class AddItem extends Component {
   render() {
+
+		const { onAddItem } = this.props;
+
     return (
       <div className="add-item-grid">
-				<span></span>
-        <button type="button" className="add-item btn btn-success">
-          Add element
+				<input placeholder="add task..." className="placeholder" />
+        <button type="button" className="btn btn-success btn-sm"
+				onClick={() => onAddItem('Added task')}>
+          Add
         </button>
       </div>
     );

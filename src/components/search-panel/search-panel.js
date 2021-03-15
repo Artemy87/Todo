@@ -6,7 +6,7 @@ import "./search-panel.css";
 const SearchPanel = () => {
   return (
     <div className="search-panel">
-      <input placeholder="search" className="placeholder me-md-2"/>
+      <input placeholder="search" className="placeholder"/>
 			<ItemStatusFilter />
     </div>
   );

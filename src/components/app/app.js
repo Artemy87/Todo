@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import AppHeader from "../app-header";
 import SearchPanel from "..//search-panel";
 import TodoList from "../todo-list";
+import AddItem from '../add-item';
 
 import './app.css';
 
@@ -30,6 +31,7 @@ export default class App extends Component {
 		});
 	};
 
+
 	render() {
 		return (
 			<div className="app">
@@ -38,6 +40,7 @@ export default class App extends Component {
 				<TodoList todos={this.state.todoData}
 				onDeleted={this.deleteItem}
 				/>
+				<AddItem />
 			</div>
 		);
 	}

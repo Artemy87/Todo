@@ -3,11 +3,11 @@
 	grid-row-start: 6;
 	
 	display: grid;
-	grid-template-columns: 70px 1fr 30%;
+	grid-template-columns: 40px 1fr 30%;
 	grid-column-start: 2;
 	column-gap: 5px;
 }
 
-.add-item-grid .placeholder {
+.add-item-grid .form-control {
 	grid-column-start: 2;
 }

@@ -5,10 +5,13 @@ import "./search-panel.css";
 
 const SearchPanel = () => {
   return (
-    <div className="search-panel">
-      <input placeholder="search" className="placeholder"/>
+    <form className="search-panel">
+      <input
+					type="text"
+					placeholder="search"
+					className="form-search"/>
 			<ItemStatusFilter />
-    </div>
+    </form>
   );
 };
 

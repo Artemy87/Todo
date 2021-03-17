@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import AppHeader from "../app-header";
 import SearchPanel from "..//search-panel";
 import TodoList from "../todo-list";
-import AddItem from "../add-item";
+import ItemAddForm from "../item-add-form";
 
 import "./app.css";
 
@@ -38,7 +38,7 @@ export default class App extends Component {
     });
   };
 
-  addItem = (text) => {
+  itemAdd = (text) => {
     const newItem = this.createTodoItem(text);
 
     this.setState(({ todoData }) => {
@@ -90,7 +90,7 @@ export default class App extends Component {
           onToggleDone={this.onToggleDone}
           onDeleted={this.deleteItem}
         />
-        <AddItem onAddItem={this.addItem} />
+        <ItemAddForm onItemAdded={this.itemAdd} />
       </div>
     );
   }

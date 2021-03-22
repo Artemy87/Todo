@@ -2,7 +2,7 @@ import React from "react";
 
 import "./item-status-filter";
 
-const ItemStatusFilter = () => {
+const ItemStatusFilter = ({ showDone }) => {
   return (
     <div>
       <button type="button" className="btn btn-info">
@@ -11,7 +11,10 @@ const ItemStatusFilter = () => {
       <button type="button" className="btn btn-outline-secondary">
         Active
       </button>
-      <button type="button" className="btn btn-outline-secondary">
+      <button 
+				type="button" 
+				className="btn btn-outline-secondary"
+				onClick={showDone}>
         Done
       </button>
     </div>

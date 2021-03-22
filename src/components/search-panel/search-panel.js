@@ -24,7 +24,10 @@ export default class SearchPanel extends Component {
           onChange={this.onSearchChange}
           value={this.state.term}
         />
-        <ItemStatusFilter />
+        <ItemStatusFilter
+          filter={this.props.filter}
+          onFilterChange={this.props.onFilterChange}
+        />
       </form>
     );
   }
